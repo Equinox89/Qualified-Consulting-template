@@ -1,0 +1,65 @@
+.mobile-menu {
+    position: relative;
+
+    &__drop {
+        position: fixed;
+        z-index: 55;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        transition: top .3s ease-out;
+        background: $base;
+        overflow-y: auto;
+    }
+
+    &__wrapper {
+        height: 100%;
+        position: relative;
+    }
+
+    &__content {
+        position: relative;
+        height: 100%;
+        padding: 16px;
+
+        a {
+            color: $grayBase;
+            text-decoration: none;
+            font-size: $fontSizeLarge;
+        }
+
+        &-section {
+            padding: 16px 0;
+
+        }
+
+        .button {
+            border: 1px solid $grayBase;
+        }
+
+        .menu {
+            display: block;
+
+            &__list {
+                margin: 0;
+                flex-direction: column;
+                align-items: flex-start;
+
+                li {
+                    margin: 0 0 24px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        color: $grayBase;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

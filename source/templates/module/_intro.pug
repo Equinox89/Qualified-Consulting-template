@@ -1,0 +1,12 @@
+= '\n'
+//= intro =
+.intro
+    .intro__wrapper
+        each item, index in introItems
+            .intro__item
+                b.intro__title= item.title
+                p= item.text
+                span
+                    img(src=`data/icons/${index}.svg`, alt='')
+//= End intro =
+= '\n'

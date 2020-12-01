@@ -1,0 +1,54 @@
+.breadcrumb {
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+    display: none;
+
+    li {
+        position: relative;
+        font-weight: 500;
+        font-size: $fontSizeSmall;
+        line-height: 1;
+        transition: all .3s;
+        display: flex;
+        align-items: center;
+        color: $gray;
+
+        &:after {
+            position: relative;
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url(../images/icons/arrow.svg) no-repeat;
+        }
+
+        &.active {
+            cursor: default;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        a {
+            display: block;
+            font-weight: 500;
+            font-size: $fontSizeSmall;
+            line-height: 1;
+            cursor: pointer;
+            white-space: nowrap;
+            text-decoration: none;
+            color: $gray;
+            border-bottom: 1px solid transparent;
+            transition: all .2s;
+
+            &:hover {
+                color: $brandPrimary;
+                border-bottom-color: $brandPrimary;
+            }
+        }
+    }
+
+    @media (min-width: $screen_min_1080) {
+        display: flex;
+    }
+}

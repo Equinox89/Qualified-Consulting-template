@@ -1,0 +1,13 @@
+= '\n'
+//= Breadcrumb =
+
+ul.breadcrumb
+    each prop, index in breadcrumbItems
+        if (breadcrumbItems.length > 1 && index === breadcrumbItems.length - 1)
+            li.active= prop.name
+        else
+            li
+                a(href= prop.link)= prop.name
+
+//= End breadcrumb =
+= '\n'

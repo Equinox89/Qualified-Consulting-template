@@ -1,0 +1,38 @@
+.menu {
+    position: relative;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        position: relative;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            margin: 0 -16px;
+
+            > li {
+                margin: 0 24px;
+                position: relative;
+
+                > a {
+                    position: relative;
+                    font-size: $fontSize16;
+                    line-height: 18px;
+                    color: $base;
+                    font-weight: 500;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        fill: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
