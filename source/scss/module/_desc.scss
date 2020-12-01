@@ -1,0 +1,26 @@
+.desc {
+
+    position: relative;
+    padding: var(--headerHeight) 0 40px;
+
+    &__wrapper {
+        max-width: 760px;
+
+        h1 {
+            color: $base;
+            margin-top: 0;
+        }
+
+        .button {
+            min-width: 220px;
+            min-height: 60px;
+            font-size: $fontSizeLarge;
+        }
+    }
+
+
+    @media (min-width: $screen_min_1200) {
+
+        padding: calc(var(--headerHeight) * 2) 0 40px;
+    }
+}

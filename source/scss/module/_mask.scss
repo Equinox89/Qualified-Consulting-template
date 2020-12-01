@@ -1,0 +1,21 @@
+.mask {
+
+
+    @media (min-width: $screen_min_1200) {
+        position: absolute;
+        width: calc(100% - 270px);
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        left: 185px;
+        display: flex;
+        z-index: -1;
+        border-left: 1px solid $borderColor;
+
+
+        &__item {
+            border-right: 1px solid $borderColor;
+            width: calc(100% / 6);
+        }
+    }
+}

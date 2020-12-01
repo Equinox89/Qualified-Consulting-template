@@ -1,0 +1,47 @@
+= '\n'
+//= Scripts =
+script(src=bowerDir + 'jquery/dist/jquery.min.js')
+script(src=bowerDir + 'swiper/dist/js/swiper.js')
+
+if (ionRangeSlider)
+    script(src=bowerDir + 'ion.rangeslider/js/ion.rangeSlider.js')
+
+if(magnifnicOnPage)
+    script(src=bowerDir + 'magnific-popup/dist/jquery.magnific-popup.js')
+
+script(src='js/main' + minSuffix + '.js')
+
+if (ionRangeSlider)
+    script.
+        $(document).ready(function() {
+
+            $('.range__slider input').ionRangeSlider({
+                type: 'double',
+                min: 0,
+                max: 20000,
+                drag_interval: true,
+                hide_min_max: true,
+                hide_from_to: true
+            });
+        });
+
+if(ratingOnPage)
+    script.
+        $(document).ready(function() {
+            $('.rating').rating({
+                max: 5,
+                readOnly: true
+            });
+        });
+
+if(magnifnicOnPage)
+    script.
+        $(document).ready(function() {
+            $('.popup-modal').magnificPopup({
+                type: 'inline',
+                preloader: false
+            });
+        });
+
+//= End scripts =
+= '\n'

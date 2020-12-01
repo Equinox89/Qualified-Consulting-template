@@ -1,0 +1,109 @@
+body {
+    #shadow {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 55;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $overlayColor;
+        cursor: pointer;
+        transition: all .3s;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &.open-mobile-drop {
+
+        #shadow {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #mobile-drop {
+            top: 56px;
+        }
+
+        .mobile-menu-btn {
+            .call-aside {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .close-aside {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &.open-search {
+        .search-button {
+            .call-aside {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .close-aside {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .search {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.open-filters {
+        #filters {
+            top: 0;
+        }
+    }
+
+    @media (min-width: $screen_min_1080) {
+        #shadow {
+            &.active {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        &.open-sort {
+            .sort {
+                z-index: 56;
+
+                &__content {
+                    .close-aside {
+                        svg {
+                            transform: rotate(0);
+                        }
+                    }
+                }
+
+                &__value {
+                    border-radius: 3px 3px 0 0;
+                    border-bottom-color: $bodyBg;
+                }
+
+                &__drop {
+                    opacity: 1;
+                    visibility: visible;
+                    border-top-color: $bodyBg;
+                }
+            }
+
+            #shadow {
+                &.active {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+= '\n'
+//= Menu =
+
+.menu
+    ul.menu__list
+        each prop in menuListItems
+            li
+                a(href= prop.link)= prop.name
+
+//= End menu =
+= '\n'

@@ -1,0 +1,113 @@
+
+//== Colors
+
+$base:                  #fff !default;
+$grayBase:              #3d2e44 !default;
+
+$grayDarker:            #111 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #777 !default;
+$grayLighter:           #e3e3e8 !default;
+
+$brandPrimary:          #399EFE !default;
+$brandYellow:           #FEDC01 !default;
+$brandGreen:            #80BA27 !default;
+$brandRed:              #DF1921 !default;
+
+$overlayColor:          rgba(0, 0, 0, 0.5) !default;
+$boxShadow:             0 4px 16px rgba(0, 0, 0, 0.16) !default;
+
+
+//== Reset
+
+$bodyBg:                #f1f3f6 !default;
+$textColor:             $grayDark !default;
+$linkColor:             $brandPrimary !default;
+
+$borderColor:           $grayLighter !default;
+
+
+//== Typography
+
+$fontFamilyBase:        'Roboto', sans-serif !default;
+
+$fontSizeSmall:         12px !default;
+$fontSizeBase:          14px !default;
+$fontSizeLarge:         18px !default;
+
+$fontSize64:            64px !default;
+$fontSize56:            56px !default;
+$fontSize48:            48px !default;
+$fontSize40:            40px !default;
+$fontSize32:            32px !default;
+$fontSize28:            28px !default;
+$fontSize24:            24px !default;
+$fontSize21:            21px !default;
+$fontSize16:            16px !default;
+$fontSize10:            10px !default;
+
+$quantityInputHeight:   40px !default;
+
+$lineHeightBase:        1.5 !default;
+
+
+//== Media queries breakpoints
+
+$screen_min_375:        375px !default;
+$screen_min_414:        414px !default;
+$screen_min_480:        480px !default;
+$screen_min_600:        600px !default;
+$screen_min_640:        640px !default;
+$screen_min_768:        768px !default;
+$screen_min_854:        854px !default;
+$screen_min_960:        960px !default;
+$screen_min_1080:       1080px !default;
+$screen_min_1200:       1200px !default;
+$screen_min_1280:       1280px !default;
+$screen_min_1320:       1320px !default;
+$screen_min_1440:       1440px !default;
+$screen_min_1560:       1560px !default;
+$screen_min_1680:       1680px !default;
+$screen_min_1800:       1800px !default;
+$screen_min_1920:       1920px !default;
+
+//== Media queries breakpoints for forms
+
+$min-s:                 $screen_min_768;
+$min-m:                 $screen_min_1080;
+$min-l:                 $screen_min_1440;
+
+
+
+//== root
+
+:root {
+    //== Form templates
+    --formGridGap: 12px;
+    --formBorderRadius: 8px;
+    --formControlHeight: 40px;
+    --checkboxSize: 26px;
+
+    //== Section templates
+    --sectionsGap: 24px;
+
+    //== Container templates
+    --container: 100%;
+    --containerGutter: 30px;
+
+    //== Aside templates
+    --asideWidth: 290px;
+
+    --headerHeight: 56px;
+
+    @media (min-width: $screen_min_1080) {
+        //== Form templates
+        --formControlHeight: 56px;
+
+        //== Section templates
+        --sectionsGap: 120px;
+
+        --headerHeight: 100px;
+    }
+}

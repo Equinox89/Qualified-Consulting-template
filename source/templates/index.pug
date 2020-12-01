@@ -1,0 +1,43 @@
+//- Utility
+
+include utils/_variable
+
+-
+    pageTitle = 'main'
+    main = true
+
+doctype html
+html
+    include layout/_head
+
+    body.body.body--main
+        include module/_mask
+        include layout/_header
+
+        = '\n'
+        //= main =
+
+        main
+            section.section.section--main
+                .container
+                    include module/_desc
+                    include module/_intro
+
+            section.section
+                .container
+                    .text-block
+                        .title-h1  Funds & SPVs made simple
+                        span 'Define your home need. Fundcup is a Wealth Container platform. It lets you set-up and deploy complex legal entities such as Funds and SPVs in hours with a few clicks. From initial structuring to NAV calculation, it is a fully integrated, one-stop shop platform bla bla',
+
+
+
+
+
+        include layout/_footer
+        include module/_mobile-menu
+
+
+        #shadow
+
+        include layout/_sprite
+        include layout/_scripts

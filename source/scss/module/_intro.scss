@@ -1,0 +1,68 @@
+.intro {
+    width: 100%;
+    background: $base;
+    z-index: 10;
+    padding: 16px;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        background: $base;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: $fontSizeLarge;
+        margin: 0 0 24px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 24px;
+
+        p {
+            margin: 0 0 24px;
+            font-size: $fontSize16;
+        }
+
+        span {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+
+    @media (min-width: $screen_min_1200) {
+        padding: 100px;
+
+        &__wrapper {
+            flex-direction: row;
+            margin: 0 -22px;
+        }
+
+        &__item {
+            margin: 0 22px;
+            width: calc(33% - 40px);
+
+            p {
+                margin: 0 0 50px;
+            }
+
+            span {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}

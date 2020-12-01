@@ -1,0 +1,20 @@
+.logo {
+    position: relative;
+    width: 100%;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: $fontSize28;
+        color: $base;
+
+    }
+}
