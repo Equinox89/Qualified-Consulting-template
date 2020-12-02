@@ -7,7 +7,7 @@
         "snippets": "gulp snippets"
     },
     "license": "MIT",
-    "repository": "https://github.com/Equinox89/fundcup.git",
+    "repository": "https://github.com/Equinox89/Qualified-Consulting-template.git",
     "authors": "Oleg Daciuk",
     "devDependencies": {
         "autoprefixer": "^6.3.3",
